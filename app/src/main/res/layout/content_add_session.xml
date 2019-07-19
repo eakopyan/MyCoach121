@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddSessionActivity"
+    tools:showIn="@layout/activity_add_session"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/addsession_sport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/interelement_margin"
+        android:text="Nouvelle séance de "
+        android:textSize="14sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:text="Titre de la séance :"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/addsession_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_hint"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:layout_gravity="top"
+                android:text="Date :"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addsession_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="@string/edittext_date_hint"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:layout_gravity="top"
+                android:text="Distance (km) :"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addsession_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="@string/edittext_number_hint"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:layout_gravity="top"
+                android:text="FC (bpm) :"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addsession_FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="@string/edittext_integer_hint"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:layout_gravity="top"
+                android:text="Durée :"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addsession_duree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ems="10"
+                android:inputType="time"
+                android:hint="@string/edittext_time_hint"/>
+        </TableRow>
+    </TableLayout>
+
+    <Switch
+        android:id="@+id/switch_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextTitle"
+        android:text="Ajouter une image"/>
+
+</LinearLayout>

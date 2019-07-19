@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">My Coach</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_calendar">Calendrier</string>
+    <string name="action_filter">Filtre</string>
+    <string name="title_activity_sport">SportActivity</string>
+    <string name="title_activity_profile">Mon profil</string>
+    <string name="title_activity_add_session">Ajouter une séance</string>
+
+    <string name="edittext_hint">Taper votre texte ici</string>
+    <string name="edittext_date_hint">JJ/MM/AA</string>
+    <string name="edittext_number_hint">123.45</string>
+    <string name="edittext_integer_hint">123</string>
+    <string name="edittext_time_hint">HH:MM</string>
+
+    <!-- Preference Titles -->
+    <string name="account_header">Paramètres du compte</string>
+    <string name="info_header">Informations personnelles</string>
+
+    <!-- Account Preferences -->
+    <string name="pseudo_title">Votre pseudo</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!-- Perso info Preferences -->
+    <string name="age_title">Age</string>
+    <string name="gender_title">Sexe</string>
+    <string name="height_title">Taille (en m)</string>
+    <string name="weight_title">Poids (en kg)</string>
+
+
+</resources>

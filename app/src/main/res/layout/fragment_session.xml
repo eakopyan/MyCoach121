@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/session_image"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/session_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/session_image"
+        android:layout_marginTop="@dimen/interelement_margin"
+        android:text="Exemple de titre"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextTitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/session_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/session_title"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:text="Insérer la date ici"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_below="@id/session_date"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow>
+            <TextView android:text="FC moyenne :" />
+            <TextView
+                android:id="@+id/fc_moyenne"
+                android:text="144 bpm"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Distance :" />
+            <TextView
+                android:id="@+id/distance"
+                android:text="51 km"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Durée :" />
+            <TextView
+                android:id="@+id/duree"
+                android:text="01:45"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Energie dépensée :" />
+            <TextView
+                android:id="@+id/energie"
+                android:text="1491 kcal"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table_buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <TableRow>
+            <Button
+                android:id="@+id/button_mod"
+                android:text="Modifier"/>
+            <Button
+                android:id="@+id/button_del"
+                android:text="Supprimer"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
